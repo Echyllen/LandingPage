@@ -1,46 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Landing Page</title>
+    <title>Página de Apresentação</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        #title h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 15px;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+        aside {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            width: 30%;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        aside h2 span {
+            color: #e67e22;
+        }
+
+        aside p {
+            margin: 15px 0;
+        }
+
+        aside form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        aside input[type="text"],
+        aside input[type="email"] {
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        aside input[type="submit"] {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: #e67e22;
+            color: white;
+            cursor: pointer;
+        }
+
+        aside input[type="submit"]:hover {
+            background: #d95e16;
+        }
+
+        article {
+            width: 65%;
+        }
+
+        article img {
+            width: 100%;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
     <header>
-<div id="title">
-<h1>Marketing</h1>
-<h1>Criativo</h1>
-</div>
-
-<ul>
-<a href="#"> <li>Inicio</li></a>
-<a href="#"> <li>Serviços</li></a>
-<a href="#"> <li>Sobre</li></a>
-<a href="#"> <li>Contato</li></a>
-<a href="#" id="Inscreva-se-btn"> <li>Já tem uma conta ?</li></a>
-</ul>
+        <div id="title">
+            <h1>Marketing</h1>
+            <h1>Criativo</h1>
+        </div>
+        <ul>
+            <a href="#"><li>Início</li></a>
+            <a href="#"><li>Serviços</li></a>
+            <a href="#"><li>Sobre</li></a>
+            <a href="#"><li>Contato</li></a>
+            <a href="#" id="Inscreva-se-btn"><li>Já tem uma conta?</li></a>
+        </ul>
     </header>
-
     <main>
-<aside>
-<h2><span>Inscreva-se agora</span></h2>
-<h2>na Newskatter</h2>
-<p>
-    Creative marketing is an approach that seeks to innovate promotional strategies for products and services by using original and impactful ideas to capture the audience's attention.
-</p>
-<form>
-<input type="text" placeholder="Nome">
-<input type="email" placeholder="E-mail">
-<input type="submit" value="Enviar">
-</form>
-</aside>
-
-<article>
-    <img src="./Marketing.png" alt="mulher roxa">
-</article>
-
+        <aside>
+            <h2><span>Inscreva-se agora</span></h2>
+            <h2>na Newskatter</h2>
+            <p>
+                O marketing criativo é uma abordagem que busca inovar as estratégias promocionais para produtos e serviços, utilizando ideias originais e impactantes para captar a atenção do público.
+            </p>
+            <form>
+                <input type="text" placeholder="Nome">
+                <input type="email" placeholder="E-mail">
+                <input type="submit" value="Enviar">
+            </form>
+        </aside>
+        <article>
+            <img src="./Marketing.png" alt="mulher roxa">
+        </article>
     </main>
-    
 </body>
 </html>
